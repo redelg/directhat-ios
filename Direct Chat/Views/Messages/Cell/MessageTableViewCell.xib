@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="Direct_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="542" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="542" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52A-uw-oPi">
+                        <rect key="frame" x="20" y="20" width="402" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-gX-5Vp">
+                        <rect key="frame" x="20" y="47" width="402" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pen-Zn-GTM">
+                        <rect key="frame" x="482" y="29.5" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="FED-QM-MAD"/>
+                            <constraint firstAttribute="height" constant="30" id="VpH-cK-ZOo"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <imageReference key="image" image="paperplane" catalog="system" renderingMode="hierarchical">
+                                <hierarchicalColors>
+                                    <color red="0.0" green="0.52156862749999999" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color systemColor="secondaryLabelColor"/>
+                                    <color systemColor="tertiaryLabelColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gh-i1-e7Q">
+                        <rect key="frame" x="442" y="29.5" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="dIf-AS-No8"/>
+                            <constraint firstAttribute="width" constant="40" id="w2U-zK-36R"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <imageReference key="image" image="square.and.arrow.up" catalog="system" renderingMode="hierarchical">
+                                <hierarchicalColors>
+                                    <color red="0.0" green="0.52156862749999999" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color red="0.0" green="0.52156862749999999" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color systemColor="tertiaryLabelColor"/>
+                                </hierarchicalColors>
+                            </imageReference>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EM5-gX-5Vp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7Bi-f8-hhV"/>
+                    <constraint firstAttribute="trailing" secondItem="Pen-Zn-GTM" secondAttribute="trailing" constant="20" id="EPT-Ml-LkG"/>
+                    <constraint firstItem="4gh-i1-e7Q" firstAttribute="leading" secondItem="52A-uw-oPi" secondAttribute="trailing" constant="20" id="ZCt-8u-U4t"/>
+                    <constraint firstItem="4gh-i1-e7Q" firstAttribute="leading" secondItem="EM5-gX-5Vp" secondAttribute="trailing" constant="20" id="arU-kW-Plv"/>
+                    <constraint firstItem="Pen-Zn-GTM" firstAttribute="leading" secondItem="4gh-i1-e7Q" secondAttribute="trailing" id="e1d-69-7eV"/>
+                    <constraint firstItem="Pen-Zn-GTM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eMZ-bT-UOe"/>
+                    <constraint firstItem="52A-uw-oPi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fwX-Gx-Pbb"/>
+                    <constraint firstItem="52A-uw-oPi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="kgq-ed-6LZ"/>
+                    <constraint firstAttribute="bottom" secondItem="EM5-gX-5Vp" secondAttribute="bottom" constant="10" id="sPa-7h-iAe"/>
+                    <constraint firstItem="4gh-i1-e7Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zfM-Sn-mp6"/>
+                    <constraint firstItem="EM5-gX-5Vp" firstAttribute="top" secondItem="52A-uw-oPi" secondAttribute="bottom" constant="5" id="zm0-yD-nKp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="content" destination="EM5-gX-5Vp" id="rDs-wr-1Mh"/>
+                <outlet property="dial" destination="Pen-Zn-GTM" id="ADD-Mh-L7u"/>
+                <outlet property="share" destination="4gh-i1-e7Q" id="ndl-y3-dKG"/>
+                <outlet property="title" destination="52A-uw-oPi" id="RJT-4a-sWX"/>
+            </connections>
+            <point key="canvasLocation" x="252.17391304347828" y="108.81696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CountryPicker",
+        "repositoryURL": "https://github.com/mobven/CountryPicker.git",
+        "state": {
+          "branch": null,
+          "revision": "8711127ce54cabf52481b735d1322ba39f4e856b",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

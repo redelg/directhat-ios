@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Direct Chat
+
+  Created by Renzo Delgado on 26/02/22.
+  
+*/
+
+"Onboarding-Title-1" = "Without Saving\nContact";
+"Onboarding-Description-1" = "Type the number and start a direct WhatsApp chat without saving or adding it as a contact.";
+"Onboarding-Title-2" = "Direct Chat";
+"Onboarding-Description-2" = "Send messages and media directly to any number without saving the contact.";
+"Onboarding-Title-3" = "Quick and \neasy to use";
+"Onboarding-Description-3" = "Start sending messages in an easy and simple way.";
+"Search" = "Search";
+"No-History" = "No chat history";
+"History" = "History";
+"Messages" = "Messages";
+"Predefined-Messages" = "Predefined Messages";
+"Send-Message" = "Send Message";
+"Start-Chat" = "Start Chat";
+"Enter-Message" = "Enter a message";
+"Enter-Title" = "Enter a title";
+"Save" = "Save";
+"Add-Message" = "Add Message";
+"Edit-Message" = "Edit Message";

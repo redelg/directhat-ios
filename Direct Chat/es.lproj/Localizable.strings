@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Direct Chat
+
+  Created by Renzo Delgado on 26/02/22.
+  
+*/
+
+"Onboarding-Title-1" = "Sin Guardar\nContacto";
+"Onboarding-Description-1" = "Escribe el número e inicia un chat directo en WhatsApp sin necesidad de guardar o agregar como contacto.";
+"Onboarding-Title-2" = "Chat Directo";
+"Onboarding-Description-2" = "Envíe mensajes y medios directamente a cualquier número sin guardar el contacto.";
+"Onboarding-Title-3" = "Rápido y Fácil \nde usar";
+"Onboarding-Description-3" = "Empieza a enviar mensajes de una manera fácil y sencilla.";
+
+"Search" = "Buscar";
+"No-History" = "Sin historial";
+"History" = "Historial";
+"Messages" = "Mensajes";
+"Predefined-Messages" = "Mensajes Predefinidos";
+"Send-Message" = "Enviar Mensaje";
+"Start-Chat" = "Iniciar Chat";
+"Enter-Message" = "Ingrese un mensaje";
+"Enter-Title" = "Ingrese un título";
+"Save" = "Guardar";
+"Add-Message" = "Agregar Mensaje";
+"Edit-Message" = "Editar Mensaje";
