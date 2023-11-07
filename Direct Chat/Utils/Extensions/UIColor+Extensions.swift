@@ -14,4 +14,6 @@ extension UIColor {
     static var pageControlSelectedGreen = UIColor(red: 70/255, green: 246/255, blue: 150/255, alpha: 1)
     static var lightGray = UIColor(red: 232/255, green: 232/255, blue: 232/255, alpha: 1)
     static var dialBackgroundColor = UIColor(red: 246/255, green: 250/255, blue: 252/255, alpha: 1)
+    static var textColor = UIColor(red: 57/255, green: 57/255, blue: 57/255, alpha: 1)
+    
 }

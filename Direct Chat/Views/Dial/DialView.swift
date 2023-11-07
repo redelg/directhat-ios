@@ -100,8 +100,14 @@ extension DialViewController {
         addThirdDialRow(dialStackView)
         addFourthDialRow(dialStackView)
         
+        scrollContainerView.addSubview(segmentedControl)
+        segmentedControl.topAnchor.constraint(equalTo: dialStackView.bottomAnchor, constant: 20).isActive = true
+        segmentedControl.trailingAnchor.constraint(equalTo: scrollContainerView.trailingAnchor, constant: -20).isActive = true
+        segmentedControl.leadingAnchor.constraint(equalTo: scrollContainerView.leadingAnchor, constant: 20).isActive = true
+        segmentedControl.centerXAnchor.constraint(equalTo: scrollContainerView.centerXAnchor).isActive = true
+        
         scrollContainerView.addSubview(startChatButton)
-        startChatButton.topAnchor.constraint(equalTo: dialStackView.bottomAnchor, constant: 40).isActive = true
+        startChatButton.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 40).isActive = true
         startChatButton.widthAnchor.constraint(equalToConstant: 180).isActive = true
         startChatButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         startChatButton.centerXAnchor.constraint(equalTo: scrollContainerView.centerXAnchor).isActive = true
@@ -253,17 +259,39 @@ extension DialViewController {
     }
     
     @objc func openWhatsapp() {
-        let phoneNumber = phoneTextView.text
+        let phoneNumber = phoneTextView.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         guard let phoneNumber = phoneNumber else {
             return
         }
         let phoneCode = CountryManager.shared.getCountries().filter({ $0.isoCode == countryPicker.selectedCountry }).first?.phoneCode ?? "+1"
-        let url = URL(string:"https://api.whatsapp.com/send?phone=\(phoneCode)\(phoneNumber)")!
-        UIApplication.shared.open(url, options: [:], completionHandler: ({ success in
-            if success {
-                self.registerNumber()
+        
+        switch segmentedControl.selectedSegmentIndex {
+            case 0:
+            if checkIfCanOpenWhatsApp() {
+                let url = URL(string:"https://api.whatsapp.com/send?phone=\(phoneCode)\(phoneNumber)")!
+                UIApplication.shared.open(url, options: [:], completionHandler: ({ success in
+                    if success {
+                        self.registerNumber()
+                    }
+                }))
             }
-        }))
+            case 1:
+            let url = URL(string:"sms:\(phoneCode)\(phoneNumber)")!
+            UIApplication.shared.open(url, options: [:], completionHandler: ({ success in
+                if success {
+                    self.registerNumber()
+                }
+            }))
+            default:
+            let appurl = URL(string:"tg://resolve?domain=\(phoneNumber)")!
+            let weburl = URL(string:"https://t.me/\(phoneNumber)")!
+            
+            if UIApplication.shared.canOpenURL(appurl) {
+                UIApplication.shared.open(appurl, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.open(weburl, options: [:], completionHandler: nil)
+            }
+        }
     }
     
     @objc private func openWhatsappWithMessage() {
@@ -272,8 +300,27 @@ extension DialViewController {
             return
         }
         let phoneCode = CountryManager.shared.getCountries().filter({ $0.isoCode == countryPicker.selectedCountry }).first?.phoneCode ?? "+1"
-        let url = URL(string:"https://wa.me/\(phoneCode)\(phoneNumber)?text=\(message!.content!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")")!
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        
+        switch segmentedControl.selectedSegmentIndex {
+            case 0:
+            if checkIfCanOpenWhatsApp() {
+                let url = URL(string:"https://wa.me/\(phoneCode)\(phoneNumber)?text=\(message!.content!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")")!
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+            default:
+            let url = URL(string:"sms:\(phoneCode)\(phoneNumber)&body=\(message!.content!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")")!
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    private func checkIfCanOpenWhatsApp() -> Bool {
+        if !isAppInstalled() {
+            let alert = UIAlertController(title: "", message: "Please Install WhatsApp", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return false
+        }
+        return true
     }
     
     @objc private func addNumber(sender: UIButton) {

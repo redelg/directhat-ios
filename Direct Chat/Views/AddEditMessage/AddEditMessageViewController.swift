@@ -87,13 +87,13 @@ class AddEditMessageViewController: UIViewController {
     
     private func validateData() -> Bool {
         if myView!.titleField.text!.isEmpty {
-            let alert = UIAlertController(title: "Alert", message: "Title cannot be empty", preferredStyle: .alert)
+            let alert = UIAlertController(title:  "", message: LocalizedString.getString(value: "Title-Not-Empty"), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return false
         }
         if myView!.messageTextView.text.isEmpty {
-            let alert = UIAlertController(title: "Alert", message: "Message cannot be empty", preferredStyle: .alert)
+            let alert = UIAlertController(title: "", message: LocalizedString.getString(value: "Message-Not-Empty"), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return false

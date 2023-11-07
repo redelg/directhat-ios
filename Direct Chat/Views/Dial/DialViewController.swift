@@ -14,6 +14,13 @@ class DialViewController: UIViewController, CountryPickerDelegate, UITextFieldDe
     
     var message: Message? = nil
     
+    lazy var segmentedControl: UISegmentedControl = {
+        let sc = message != nil ? UISegmentedControl(items: ["WhatsApp", "SMS"]) :  UISegmentedControl(items: ["WhatsApp", "SMS", "Telegram"])
+        sc.translatesAutoresizingMaskIntoConstraints = false
+        sc.selectedSegmentIndex = 0
+        return sc
+    }()
+    
     let userDetaults = UserDefaults.standard
 
     let context = (UIApplication.shared.delegate
@@ -64,6 +71,8 @@ class DialViewController: UIViewController, CountryPickerDelegate, UITextFieldDe
         tv.placeholder = "953 314 059"
         tv.textAlignment = .center
         tv.keyboardType = .phonePad
+        tv.addDoneButtonOnKeyboard()
+        tv.clearButtonMode = .whileEditing
         return tv
     }()
 
@@ -99,6 +108,7 @@ class DialViewController: UIViewController, CountryPickerDelegate, UITextFieldDe
         createLayout()
         countryPicker.delegate = self
         phoneTextView.delegate = self
+        segmentedControl.addTarget(self, action: #selector(handleSegmentChange), for: .valueChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -140,6 +150,27 @@ class DialViewController: UIViewController, CountryPickerDelegate, UITextFieldDe
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return range.location < 15
+    }
+    
+    func configurePhoneNumber() {
+        countryButton.isHidden = false
+        phoneTextView.keyboardType = .phonePad
+        phoneTextView.placeholder = "953 314 059"
+    }
+    
+    func configureTelegramUser() {
+        countryButton.isHidden = true
+        phoneTextView.keyboardType = .default
+        phoneTextView.placeholder = "usename"
+    }
+    
+    @objc func handleSegmentChange(sender: UISegmentedControl){
+        switch segmentedControl.selectedSegmentIndex {
+        case 2:
+            configureTelegramUser()
+        default:
+            configurePhoneNumber()
+        }
     }
     
 }

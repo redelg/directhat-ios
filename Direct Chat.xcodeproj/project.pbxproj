@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,10 +16,12 @@
 		C913BFA827D508680016D2C8 /* Chat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913BFA627D508680016D2C8 /* Chat+CoreDataProperties.swift */; };
 		C913BFAA27D51D7F0016D2C8 /* TableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913BFA927D51D7F0016D2C8 /* TableView+Extensions.swift */; };
 		C9197E1C27CC761000522C63 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9197E1B27CC761000522C63 /* MainView.swift */; };
+		C91DEBD5280FCE4F007414C9 /* PremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91DEBD4280FCE4F007414C9 /* PremiumViewController.swift */; };
 		C926971A27D313FB009FBE24 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C926971927D313FB009FBE24 /* HistoryViewController.swift */; };
 		C926971C27D3140B009FBE24 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C926971B27D3140B009FBE24 /* HistoryView.swift */; };
 		C926972027D4EDCA009FBE24 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C926971E27D4EDCA009FBE24 /* HistoryTableViewCell.swift */; };
 		C926972127D4EDCA009FBE24 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C926971F27D4EDCA009FBE24 /* HistoryTableViewCell.xib */; };
+		C9354CB9280E4BF200B71B00 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9354CB8280E4BF200B71B00 /* SettingsViewController.swift */; };
 		C942B30227C86CEB003CFD5F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942B30127C86CEB003CFD5F /* OnboardingViewController.swift */; };
 		C942B30427C9C58A003CFD5F /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942B30327C9C58A003CFD5F /* OnboardingCell.swift */; };
 		C942B30827CB209F003CFD5F /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942B30727CB209F003CFD5F /* OnboardingItem.swift */; };
@@ -27,6 +29,7 @@
 		C942B31327CB2D42003CFD5F /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942B31227CB2D42003CFD5F /* LocalizedString.swift */; };
 		C942B31527CBEAE9003CFD5F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942B31427CBEAE8003CFD5F /* UIView+Extensions.swift */; };
 		C942B31727CC3015003CFD5F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942B31627CC3015003CFD5F /* UIColor+Extensions.swift */; };
+		C9602F4E27ED59DA0018F767 /* AppInstalled.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9602F4D27ED59DA0018F767 /* AppInstalled.swift */; };
 		C9A53BF727DC04EB0041C672 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A53BF627DC04EB0041C672 /* Subscription.swift */; };
 		C9A53BFA27DC38D60041C672 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A53BF927DC38D60041C672 /* MessagesViewController.swift */; };
 		C9A53BFC27DC38F40041C672 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A53BFB27DC38F40041C672 /* MessagesView.swift */; };
@@ -56,10 +59,12 @@
 		C913BFA627D508680016D2C8 /* Chat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chat+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		C913BFA927D51D7F0016D2C8 /* TableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extensions.swift"; sourceTree = "<group>"; };
 		C9197E1B27CC761000522C63 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C91DEBD4280FCE4F007414C9 /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
 		C926971927D313FB009FBE24 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		C926971B27D3140B009FBE24 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		C926971E27D4EDCA009FBE24 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		C926971F27D4EDCA009FBE24 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		C9354CB8280E4BF200B71B00 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C942B30127C86CEB003CFD5F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C942B30327C9C58A003CFD5F /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		C942B30727CB209F003CFD5F /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
@@ -69,6 +74,8 @@
 		C942B31227CB2D42003CFD5F /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		C942B31427CBEAE8003CFD5F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C942B31627CC3015003CFD5F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		C9602F4D27ED59DA0018F767 /* AppInstalled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstalled.swift; sourceTree = "<group>"; };
+		C9862C05281108BC00257C52 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		C9A53BF627DC04EB0041C672 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		C9A53BF927DC38D60041C672 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		C9A53BFB27DC38F40041C672 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -153,9 +160,27 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C9354CB6280E4B4D00B71B00 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C9354CB8280E4BF200B71B00 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C9354CB7280E4B5900B71B00 /* Premium */ = {
+			isa = PBXGroup;
+			children = (
+				C91DEBD4280FCE4F007414C9 /* PremiumViewController.swift */,
+			);
+			path = Premium;
+			sourceTree = "<group>";
+		};
 		C942B2FE27C86C4F003CFD5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9354CB7280E4B5900B71B00 /* Premium */,
+				C9354CB6280E4B4D00B71B00 /* Settings */,
 				C9A5B75727E032C700AA26DA /* AddEditMessage */,
 				C9A53BF827DC34040041C672 /* Messages */,
 				C926971827D313DF009FBE24 /* History */,
@@ -197,6 +222,7 @@
 			children = (
 				C942B31127CB2D34003CFD5F /* Extensions */,
 				C9A53BF627DC04EB0041C672 /* Subscription.swift */,
+				C9862C05281108BC00257C52 /* Configuration.storekit */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -210,6 +236,7 @@
 				C913BFA927D51D7F0016D2C8 /* TableView+Extensions.swift */,
 				C9C3D66727D56CB9001E8AB3 /* Ads.swift */,
 				C9A5B75E27E1847E00AA26DA /* TextField+Extensions.swift */,
+				C9602F4D27ED59DA0018F767 /* AppInstalled.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,7 +354,7 @@
 				};
 			};
 			buildConfigurationList = C9D4FEAC27C0AABB00B639F3 /* Build configuration list for PBXProject "Direct Chat" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -430,7 +457,10 @@
 				C913BFA827D508680016D2C8 /* Chat+CoreDataProperties.swift in Sources */,
 				C9A5B75F27E1847E00AA26DA /* TextField+Extensions.swift in Sources */,
 				C926972027D4EDCA009FBE24 /* HistoryTableViewCell.swift in Sources */,
+				C9602F4E27ED59DA0018F767 /* AppInstalled.swift in Sources */,
 				C942B31527CBEAE9003CFD5F /* UIView+Extensions.swift in Sources */,
+				C91DEBD5280FCE4F007414C9 /* PremiumViewController.swift in Sources */,
+				C9354CB9280E4BF200B71B00 /* SettingsViewController.swift in Sources */,
 				C913BFAA27D51D7F0016D2C8 /* TableView+Extensions.swift in Sources */,
 				C904A97027CD73EA00C65D59 /* DialViewController.swift in Sources */,
 				C942B31727CC3015003CFD5F /* UIColor+Extensions.swift in Sources */,
@@ -528,7 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -602,22 +632,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = J8MKP62BTK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Direct Chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codergang.directchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -635,22 +666,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = J8MKP62BTK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Direct Chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.codergang.directchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

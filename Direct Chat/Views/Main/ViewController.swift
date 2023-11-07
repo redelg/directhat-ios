@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AdSupport
 
 class ViewController: UITabBarController {
 
@@ -14,9 +15,11 @@ class ViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.backgroundColor = .white
         tabBar.items?[0].title = LocalizedString.getString(value: "Chat")
         tabBar.items?[1].title = LocalizedString.getString(value: "History")
         tabBar.items?[2].title = LocalizedString.getString(value: "Messages")
+        tabBar.items?[3].title = LocalizedString.getString(value: "Settings")
     }
     
     override func viewDidAppear(_ animated: Bool) {

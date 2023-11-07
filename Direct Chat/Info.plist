@@ -4,6 +4,10 @@
 <dict>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-7110624018386566~9252792036</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>whatsapp</string>
+	</array>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
@@ -174,8 +178,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>
